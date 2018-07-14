@@ -8,6 +8,7 @@ import bbcNews from './containers/bbcNews.js'
 import foxNews from './containers/foxNews.js'
 import Footer from './components/Footer.js'
 import NavBar from './components/NavBar.js'
+import Home from './components/Home.js'
 
 import './App.css';
 
@@ -22,6 +23,7 @@ class App extends Component {
         <Router>
           <div>
             <NavBar />
+            <Route path="/" exact component={Home} />
             <Route path="/bbcNews" component={bbcNews} />
             <Route path="/foxNews" component={foxNews} />
           </div>
