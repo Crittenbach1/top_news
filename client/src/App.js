@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import logo from './logo.svg';
 import bbcNews from './components/bbcNews.js'
+import foxNews from './components/bbcNews.js'
 import './App.css';
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
         <Router>
           <div>
             <Route path="/bbcNews" component={bbcNews} />
+            <Route path="/foxNews" component={foxNews} />
           </div>
         </Router>
 
