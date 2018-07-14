@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import Header from '../components/Header.js'
 import '../App.css';
 
 class BbcNews extends Component {
 
   componentDidMount() {
-  
+
   }
 
 
@@ -14,7 +15,8 @@ class BbcNews extends Component {
 
       return (
         <div>
-          hi
+          <Header title="BBC Top News" />
+
         </div>
       );
   }
