@@ -4,7 +4,7 @@ import {
   Route
 } from 'react-router-dom';
 import logo from './logo.svg';
-import BbcNews from './components/BbcNews.js'
+import bbcNews from './components/bbcNews.js'
 import './App.css';
 
 class App extends Component {
@@ -17,8 +17,7 @@ class App extends Component {
         </header>
         <Router>
           <div>
-            <NavBar />
-            <Route path="/" component={BbbNews} />
+            <Route path="/bbcNews" component={bbcNews} />
           </div>
         </Router>
 
