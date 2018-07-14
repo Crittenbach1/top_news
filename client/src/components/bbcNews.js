@@ -12,18 +12,8 @@ class BbcNews extends Component {
      this.props.fetchBbcNews()
   }
 
-
-
-
-
-
-
   render() {
-
-
-
      let i = 0;
-
 
       return (
         <div>
@@ -35,7 +25,6 @@ class BbcNews extends Component {
 }
 
 const mapStateToProps = (state) => {
-  debugger
   return {news: state.bbcNews}
 }
 
