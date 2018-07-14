@@ -6,4 +6,5 @@ import foxNews from './foxNewsReducer.js';
 export default combineReducers({
   bbcNews,
   foxNews,
+  cnnNews,
 });
