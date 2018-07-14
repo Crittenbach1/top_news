@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/Header.js'
+import { fetchBbcNews } from '../actions/bbcNewsActions.js';
 import '../App.css';
 
 class BbcNews extends Component {
 
   componentDidMount() {
-
+     this.props.fetchBbcNews()
   }
 
 
@@ -27,4 +28,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, {})(BbcNews);
+export default connect(mapStateToProps, {fetchBbcNews})(BbcNews);
