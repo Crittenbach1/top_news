@@ -4,8 +4,8 @@ import {
   Route
 } from 'react-router-dom';
 import logo from './logo.svg';
-import bbcNews from './components/bbcNews.js'
-import foxNews from './components/bbcNews.js'
+import bbcNews from './containers/bbcNews.js'
+import foxNews from './containers/foxNews.js'
 import './App.css';
 
 class App extends Component {

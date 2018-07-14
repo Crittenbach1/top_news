@@ -13,8 +13,6 @@ export function fetchBbcNews() {
       return response.json()
     })
      .then(function(news) {
-       debugger
-       //console.log(news.articles[0].title)
         dispatch({type: 'FETCH_BBC_NEWS', payload: news.articles})
     })
   }

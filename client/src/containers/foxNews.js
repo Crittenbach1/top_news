@@ -25,7 +25,7 @@ class FoxNews extends Component {
 }
 
 const mapStateToProps = (state) => {
-  return {news: state.bbcNews}
+  return {news: state.foxNews}
 }
 
 
