@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/Header.js'
 import { fetchBbcNews } from '../actions/bbcNewsActions.js';
+import NewsArticle from '../components/NewsArticle.js'
+
 import '../App.css';
 
 class BbcNews extends Component {
@@ -11,14 +13,22 @@ class BbcNews extends Component {
   }
 
 
+
+
+
+
+
   render() {
-    let i = 0;
-  
+
+
+
+     let i = 0;
+
 
       return (
         <div>
           <Header title="BBC Top News" />
-
+          {this.props.news.map(article=><NewsArticle key={i += 1} article={article} />)}
         </div>
       );
   }
@@ -26,7 +36,7 @@ class BbcNews extends Component {
 
 const mapStateToProps = (state) => {
   debugger
-  return {news: state.news}
+  return {news: state.bbcNews}
 }
 
 
