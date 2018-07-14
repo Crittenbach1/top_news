@@ -23,6 +23,6 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-  "popper": "^1.0.1"
-}
+    "popper": "^1.0.1"
+  }
 }
