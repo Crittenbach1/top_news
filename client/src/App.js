@@ -6,6 +6,8 @@ import {
 import logo from './logo.svg';
 import bbcNews from './containers/bbcNews.js'
 import foxNews from './containers/foxNews.js'
+import Footer from './components/Footer.js'
+
 import './App.css';
 
 class App extends Component {
@@ -22,7 +24,7 @@ class App extends Component {
             <Route path="/foxNews" component={foxNews} />
           </div>
         </Router>
-
+        <Footer />
       </div>
     );
   }
