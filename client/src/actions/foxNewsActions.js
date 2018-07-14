@@ -1,6 +1,6 @@
 import fetch from 'isomorphic-fetch';
 
-export function fetchBbcNews() {
+export function fetchFoxNews() {
 
   return function(dispatch){
     dispatch({type: 'LOADING'})
