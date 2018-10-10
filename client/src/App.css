@@ -16,6 +16,14 @@
     margin-left: 20px;
 }
 
+.article {
+  padding-top: 20px;
+  padding-bottom: 130px;
+  background-color: #f0f0f0;
+  margin: 100px;
+  border-radius: 15px;
+}
+
 
 .App-intro {
   font-size: large;
