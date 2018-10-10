@@ -18,7 +18,7 @@
 
 .article {
   padding-top: 20px;
-  padding-bottom: 130px;
+  padding-bottom: 110px;
   background-color: #f0f0f0;
   margin: 100px;
   border-radius: 15px;
@@ -28,6 +28,18 @@
 .news-header {
   color: #f0c980;
 }
+
+a:hover {
+    color: grey;
+}
+
+a {
+  color: black;
+  style: bold;
+  text-decoration: none;
+  padding: 5px;
+}
+
 
 
 
