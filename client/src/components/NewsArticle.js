@@ -1,12 +1,18 @@
 import React from 'react';
+var $ = require ('jquery');
 
+class NewsArticle extends React.Component {
 
-const NewsArticle = ( { key, article } ) =>
-    <div key>
-       <h3><a href={article.url}>{article.title}</a></h3>
-       <p>{article.author}</p>
-       <p>{article.description}</p>
-       <img src={article.urlToImage}/>
-    </div>
+      render() {
+
+        return (
+          <div className="article">
+            <img alt = "" src={this.props.article.urlToImage}/>
+             <h3><a href={this.props.article.url}>{this.props.article.title}</a></h3>
+             <p>{this.props.article.description}</p>
+          </div>
+        );
+       }
+     }
 
 export default NewsArticle;
