@@ -15,7 +15,8 @@ class SavedArticles extends Component {
       return (
 
           <div>
-           
+            <Header title="Saved News Articles" />
+            {this.props.articles.map(article=><SavedNewsArticle key={article.id} article={article} />)}
           </div>
 
       );
