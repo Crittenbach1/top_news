@@ -26,7 +26,7 @@ class NewsArticle extends React.Component {
 
         return (
           <div className="article">
-            <img alt = "" src={this.props.article.urlToImage}/>
+            <img className="article-images" alt = "" src={this.props.article.urlToImage}/>
              <h3><a href={this.props.article.url}>{this.props.article.title}</a></h3>
              <p>{this.props.article.description}</p>
              <br/>

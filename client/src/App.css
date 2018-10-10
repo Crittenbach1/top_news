@@ -8,6 +8,14 @@
   font-family: 'Playfair Display', serif;
 }
 
+.article-images {
+    position: relative;
+    width:  235px;
+    height: 169px;
+    float: left;
+    margin-left: 20px;
+}
+
 
 .App-intro {
   font-size: large;
