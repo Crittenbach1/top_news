@@ -9,6 +9,9 @@ const NavBar = ( { } ) =>
         <NavLink to="/bbcNews">BBC</NavLink>
 
         <NavLink to="/foxNews">Fox</NavLink>
+
+        <NavLink to="/savedArticles">Saved Articles</NavLink>
+
       </div>
 
 

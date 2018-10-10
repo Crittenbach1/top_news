@@ -9,8 +9,8 @@ import foxNews from './containers/foxNews.js'
 import Footer from './components/Footer.js'
 import NavBar from './components/NavBar.js'
 import Home from './components/Home.js'
+import SavedArticles from './containers/savedArticles.js'
 
-import './App.css';
 
 class App extends Component {
   render() {
@@ -26,6 +26,7 @@ class App extends Component {
             <Route path="/" exact component={Home} />
             <Route path="/bbcNews" component={bbcNews} />
             <Route path="/foxNews" component={foxNews} />
+            <Route path="/savedArticles" component={SavedArticles} />
           </div>
         </Router>
         <Footer />
