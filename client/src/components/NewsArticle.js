@@ -22,8 +22,6 @@ class NewsArticle extends React.Component {
 
       }
 
-
-
        render() {
 
         return (
