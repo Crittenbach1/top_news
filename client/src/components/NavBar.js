@@ -2,7 +2,7 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 
-const NavBar = ( { } ) =>
+const NavBar = ( ) =>
       <div>
         <NavLink to="/" exact>Home</NavLink>
 
