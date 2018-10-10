@@ -11,7 +11,15 @@ class NewsArticle extends React.Component {
         var description = this.props.article.description;
         var url = this.props.article.url;
 
-        
+        $.ajax({
+            url: "http://localhost:3001/api/v1/articles",
+            type: "POST",
+            data: { article: { title: title, author: author, description: description, url: url } },
+            success: response => {
+              console.log("it worked!", response);
+            }
+        });
+
       }
 
 
