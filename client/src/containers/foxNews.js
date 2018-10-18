@@ -17,7 +17,7 @@ class FoxNews extends Component {
 
       return (
         <div>
-          <Header title="Top Fox News" />
+          <Header title="Fox" />
           {this.props.news.map(article=><NewsArticle key={i += 1} article={article} />)}
         </div>
       );

@@ -13,12 +13,12 @@ class BbcNews extends Component {
   }
 
   render() {
-     let i = 0; // package shortID: optional todo
+     let i = 0;
 
       return (
         <div>
-          <Header title="BBC Top News" />
-          {this.props.news.map(article=><NewsArticle key={i += 1} article={article} fetch={this.props.fetchBbcNews()}/>)}
+          <Header title="BBC" />
+          {this.props.news.map(article=><NewsArticle key={i += 1} article={article} />)}
         </div>
       );
   }

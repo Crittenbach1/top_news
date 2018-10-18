@@ -8,7 +8,7 @@ export function fetchFoxNews() {
           'sources=fox-news&' +
           'apiKey=70bcf549d841400da8555aa7ce6a69c3';
     var req = new Request(url);
-    return fetch(req)
+    return fetch(req, {mode: 'cors'})
     .then(function(response) {
       return response.json()
     })
