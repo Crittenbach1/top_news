@@ -1,26 +1,10 @@
 import React from 'react';
-var $ = require ('jquery')
+
+import { saveArticle } from '../actions/saveArticlesActions.js'
 
 
 class NewsArticle extends React.Component {
 
-
-      handleClick(event) {
-        var title = this.props.article.title;
-        var author = this.props.article.author;
-        var description = this.props.article.description;
-        var url = this.props.article.url;
-
-        $.ajax({
-            url: "http://localhost:3001/api/v1/articles",
-            type: "POST",
-            data: { article: { title: title, author: author, description: description, url: url } },
-            success: response => {
-              console.log("it worked!", response);
-            }
-        });
-
-      }
 
       render() {
 
@@ -30,7 +14,7 @@ class NewsArticle extends React.Component {
              <h3><a href={this.props.article.url}>{this.props.article.title}</a></h3>
              <p>{this.props.article.description}</p>
              <br/>
-             <input type="submit" onClick={this.handleClick.bind(this)} value="Save Article"/>
+             <input type="submit" onClick={saveArticle(this)} value="Save Article"/>
           </div>
         );
        }
