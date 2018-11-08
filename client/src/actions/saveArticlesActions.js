@@ -9,12 +9,12 @@ export function saveArticle(rec) {
         'Accept': "application/json",
         'Content-Type': "application/json",
       },
-      body: JSON.stringify(rec.props.article)
+      body: JSON.stringify(rec)
     })
     .then(res => {
       return res.json()
     }).then(article => {
-      // dispatch({type: 'SAVE_ARTICLE', payload: article})
+       dispatch({type: 'SAVE_ARTICLE', payload: article})
    })
   }
 }

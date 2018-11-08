@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import Header from '../components/Header.js'
 import { fetchBbcNews } from '../actions/bbcNewsActions.js';
 import NewsArticle from '../components/NewsArticle.js'
+import { saveArticle } from '../actions/saveArticlesActions.js'
+
 
 import '../App.css';
 
@@ -13,12 +15,12 @@ class BbcNews extends Component {
   }
 
   render() {
-     let i = 0;
+       
 
       return (
         <div>
           <Header title="BBC" />
-          {this.props.news.map(article=><NewsArticle key={i += 1} article={article} />)}
+          {this.props.news.map(article=><NewsArticle article={article} saveArticle={this.props.saveArticle}/>)}
         </div>
       );
   }
@@ -29,4 +31,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, {fetchBbcNews})(BbcNews);
+export default connect(mapStateToProps, {fetchBbcNews, saveArticle})(BbcNews);
