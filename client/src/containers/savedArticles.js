@@ -1,16 +1,11 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import Header from '../components/Header.js'
-import { fetchSavedArticles } from '../actions/savedArticlesActions.js';
 import SavedNewsArticle from '../components/SavedNewsArticle.js'
 
 import '../App.css';
 
 class SavedArticles extends Component {
-
-  componentDidMount() {
-    this.props.fetchSavedArticles()
-  }
 
 
   render() {
@@ -31,4 +26,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, {fetchSavedArticles})(SavedArticles);
+export default connect(mapStateToProps)(SavedArticles);

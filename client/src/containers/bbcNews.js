@@ -10,12 +10,7 @@ import '../App.css';
 
 class BbcNews extends Component {
 
-  componentDidMount() {
-     this.props.fetchBbcNews()
-  }
-
   render() {
-       
 
       return (
         <div>
@@ -31,4 +26,4 @@ const mapStateToProps = (state) => {
 }
 
 
-export default connect(mapStateToProps, {fetchBbcNews, saveArticle})(BbcNews);
+export default connect(mapStateToProps, {saveArticle})(BbcNews);
