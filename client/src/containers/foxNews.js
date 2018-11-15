@@ -9,12 +9,20 @@ import '../App.css';
 
 class FoxNews extends Component {
 
+  constructor(props) {
+     super(props);
+
+     this.likes = 0;
+  }
+
+
+
   render() {
 
       return (
         <div>
           <Header title="Fox" />
-          {this.props.news.map(article=><NewsArticle article={article} saveArticle={this.props.saveArticle} />)}
+          {this.props.news.map(article=><NewsArticle article={article} saveArticle={this.props.saveArticle} likes={this.state["likes"]}/>)}
         </div>
       );
   }
