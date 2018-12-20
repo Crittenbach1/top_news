@@ -10,13 +10,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_10_10_212038) do
+ActiveRecord::Schema.define(version: 2018_11_21_004149) do
 
   create_table "articles", force: :cascade do |t|
     t.string "title"
     t.string "url"
     t.string "description"
     t.string "author"
+    t.integer "likes", default: 0
   end
 
 end
