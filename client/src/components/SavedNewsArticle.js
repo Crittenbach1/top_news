@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 class SavedNewsArticle extends Component {
 
+
   updateStateLikes = () => {
 
        var newArticle = {

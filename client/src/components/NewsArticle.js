@@ -9,6 +9,7 @@ const NewsArticle = (props) => {
        <h3><a href={props.article.url}>{props.article.title}</a></h3>
        <p>{props.article.description}</p>
        <p className={props.article.title}></p>
+       <p class={props.article.title}></p>
        <br/>
        <input type="submit" onClick={() => {
          props.saveArticle(props.article)

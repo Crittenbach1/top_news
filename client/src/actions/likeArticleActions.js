@@ -15,7 +15,6 @@ export function likeArticle(article) {
     .then(res => {
       return res.json()
     }).then(article => {
-      console.log(article)
        dispatch({type: 'LIKE_ARTICLE', payload: article})
    })
   }
